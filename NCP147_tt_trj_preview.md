@@ -1,5 +1,5 @@
-### NCP<sup><i>tt</i></sup><sub>147</sub> - same as NCP<sub>147</sub>, but with truncated histone tails (PDB ID 1KX5)
-[Back](https://intbio.github.io/Armeev_et_al_2021)
+### SRH–DR5-B–iRGD–DR5 - trimer of bivalent fusion SRH–DR5-B–iRGD in complex with receptor DR5 (derived from PDB ID 1D0G)
+[Back](https://intbio.github.io/2024_TRAIL_MD)
 
 <html lang="en">
   <head>
@@ -48,10 +48,9 @@
 <script src="https://unpkg.com/ngl@2.0.0-dev.35/dist/ngl.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script>
-  var pdb="trj/1kx5_ntm_for_web.pdb"
-  var xtc="trj/1kx5_ntm_for_web.xtc"
-  var csvfile="dat/1kx5_ntm_dist_unwrap.csv"
-  var trjstep = 0.1;
+  var pdb="trj/trimer_peptides_DR5.pdb"
+  var xtc="trj/trimer_peptides_DR5.xtc"
+  var trjstep = 0.02;
   $(document).ready(function() {
     window.stage = new NGL.Stage("viewport0", {
       backgroundColor: "#FFFFFF"
@@ -97,87 +96,74 @@
       });
       window.arg_lys_selection.setVisibility(false);
       
-      window.dna_latch_selection = nucl.addRepresentation('hyperball', {
-        "sele": "39-49 and (:A or :E) and not _H",
-        color: residues,
-        radius: 3.5
+
+      nucl.addRepresentation('cartoon', {
+        "sele": ":A :B :C and 91-102",
+        "color": #E830AE,
+        "aspectRatio": aspectRatio,
+        'radiusScale': radiusScale,
+        'radiusType': 'sstruc',
+        "capped": true,
+        'subdiv': 10,
+        'diffuseInterior': false,
+        'useInteriorColor': false
       });
-      window.dna_latch_selection.setVisibility(false);
+      nucl.addRepresentation('cartoon', {
+        "sele": ":A :B :C and 103-113",
+        "color": "#F3191B",
+        "aspectRatio": aspectRatio,
+        'radiusScale': radiusScale,
+        'radiusType': 'sstruc',
+        "capped": true,
+        'subdiv': 10,
+        'diffuseInterior': false,
+        'useInteriorColor': false
+      });
+      nucl.addRepresentation('cartoon', {
+        "sele": ":A :B :C and 114-281",
+        "color": #FFDBBE,
+        "aspectRatio": aspectRatio,
+        'radiusScale': radiusScale,
+        'radiusType': 'sstruc',
+        "capped": true,
+        'subdiv': 10,
+        'diffuseInterior': false,
+        'useInteriorColor': false
+      });
+      nucl.addRepresentation('cartoon', {
+        "sele": ":A :B :C and 282-294",
+        "color": #151DB3,
+        "aspectRatio": aspectRatio,
+        'radiusScale': radiusScale,
+        'radiusType': 'sstruc',
+        "capped": true,
+        'subdiv': 10,
+        'diffuseInterior': false,
+        'useInteriorColor': false
+      });
+      nucl.addRepresentation('cartoon', {
+        "sele": ":A :B :C and 295-303",
+        "color": #0EC1D8,
+        "aspectRatio": aspectRatio,
+        'radiusScale': radiusScale,
+        'radiusType': 'sstruc',
+        "capped": true,
+        'subdiv': 10,
+        'diffuseInterior': false,
+        'useInteriorColor': false
+      });
+      nucl.addRepresentation('cartoon', {
+        "sele": ":R :S :T ",
+        "color": #068006,
+        "aspectRatio": aspectRatio,
+        'radiusScale': radiusScale,
+        'radiusType': 'sstruc',
+        "capped": true,
+        'subdiv': 10,
+        'diffuseInterior': false,
+        'useInteriorColor': false
+      });
       
-      //H3 39-49 - назвать H3 39-49 DNA latch
-
-
-      nucl.addRepresentation('cartoon', {
-        "sele": ":A :E",
-        "color": 0x020AED,
-        "aspectRatio": aspectRatio,
-        'radiusScale': radiusScale,
-        'radiusType': 'sstruc',
-        "capped": true,
-        'subdiv': 10,
-        'diffuseInterior': false,
-        'useInteriorColor': false
-      });
-      nucl.addRepresentation('cartoon', {
-        "sele": ":B :F",
-        "color": "green",
-        "aspectRatio": aspectRatio,
-        'radiusScale': radiusScale,
-        'radiusType': 'sstruc',
-        "capped": true,
-        'subdiv': 10,
-        'diffuseInterior': false,
-        'useInteriorColor': false
-      });
-      nucl.addRepresentation('cartoon', {
-        "sele": ":C :G",
-        "color": 0xE0F705,
-        "aspectRatio": aspectRatio,
-        'radiusScale': radiusScale,
-        'radiusType': 'sstruc',
-        "capped": true,
-        'subdiv': 10,
-        'diffuseInterior': false,
-        'useInteriorColor': false
-      });
-      nucl.addRepresentation('cartoon', {
-        "sele": ":D :H",
-        "color": 0xCE0000,
-        "aspectRatio": aspectRatio,
-        'radiusScale': radiusScale,
-        'radiusType': 'sstruc',
-        "capped": true,
-        'subdiv': 10,
-        'diffuseInterior': false,
-        'useInteriorColor': false
-      });
-      nucl.addRepresentation('spacefill', {
-        "sele": ":I and -73 and .C1'",
-        "color": "steelblue",
-        "radius":5,
-        'diffuseInterior': false,
-        'useInteriorColor': false
-      });
-      nucl.addRepresentation('spacefill', {
-        "sele": ":J and -73 and .C1'",
-        "color": "orange",
-        "radius":5,
-        'diffuseInterior': false,
-        'useInteriorColor': false
-      });
-      window.nucl_cartoon = nucl.addRepresentation('cartoon', {
-        "sele": "nucleic",
-        "color": 'grey',
-        "aspectRatio": aspectRatio,
-        "radius": radius,
-        "radiusSegments": 1,
-        "capped": 0
-      });
-      window.nucl_base = nucl.addRepresentation('base', {
-        "sele": "nucleic",
-        "color": 'grey'
-      });
-
       NGL.autoLoad(xtc).then(function(frames) {
         nucl.addTrajectory(frames);
         window.traj = nucl.trajList[0].trajectory;
