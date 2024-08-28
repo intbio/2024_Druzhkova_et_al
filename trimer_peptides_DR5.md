@@ -99,7 +99,7 @@
 
       nucl.addRepresentation('cartoon', {
         "sele": ":A :B :C and 91-102",
-        "color": #E830AE,
+        "color": 'magenta',
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
         'radiusType': 'sstruc',
@@ -110,7 +110,7 @@
       });
       nucl.addRepresentation('cartoon', {
         "sele": ":A :B :C and 103-113",
-        "color": "#F3191B",
+        "color": 0xCE0000,
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
         'radiusType': 'sstruc',
@@ -121,7 +121,7 @@
       });
       nucl.addRepresentation('cartoon', {
         "sele": ":A :B :C and 114-281",
-        "color": #FFDBBE,
+        "color": 'tan',
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
         'radiusType': 'sstruc',
@@ -132,7 +132,7 @@
       });
       nucl.addRepresentation('cartoon', {
         "sele": ":A :B :C and 282-294",
-        "color": #151DB3,
+        "color": 0x020AED,
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
         'radiusType': 'sstruc',
@@ -143,7 +143,7 @@
       });
       nucl.addRepresentation('cartoon', {
         "sele": ":A :B :C and 295-303",
-        "color": #0EC1D8,
+        "color": 'cyan',
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
         'radiusType': 'sstruc',
@@ -154,7 +154,7 @@
       });
       nucl.addRepresentation('cartoon', {
         "sele": ":R :S :T ",
-        "color": #068006,
+        "color": 'green',
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
         'radiusType': 'sstruc',
