@@ -98,7 +98,7 @@
       
 
       nucl.addRepresentation('cartoon', {
-        "sele": ":A :B :C and 91-102",
+        "sele": "(:A :B :C) and (91-102)",
         "color": "magenta",
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
@@ -109,7 +109,7 @@
         'useInteriorColor': false
       });
       nucl.addRepresentation('cartoon', {
-        "sele": ":A :B :C and 103-113",
+        "sele": "(:A :B :C) and (103-113)",
         "color": 0xCE0000,
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
@@ -120,7 +120,7 @@
         'useInteriorColor': false
       });
       nucl.addRepresentation('cartoon', {
-        "sele": ":A :B :C and 114-281",
+        "sele": "(:A :B :C) and (114-281)",
         "color": "tan",
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
@@ -131,7 +131,7 @@
         'useInteriorColor': false
       });
       nucl.addRepresentation('cartoon', {
-        "sele": ":A :B :C and 282-294",
+        "sele": "(:A :B :C) and (282-294)",
         "color": 0x020AED,
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
@@ -142,7 +142,7 @@
         'useInteriorColor': false
       });
       nucl.addRepresentation('cartoon', {
-        "sele": ":A :B :C and 295-303",
+        "sele": "(:A :B :C) and (295-303)",
         "color": "cyan",
         "aspectRatio": aspectRatio,
         'radiusScale': radiusScale,
