@@ -1,4 +1,4 @@
-### SRH–DR5-B–iRGD–DR5 - trimer of bivalent fusion SRH–DR5-B–iRGD in complex with receptor DR5 (derived from PDB ID 1D0G)
+### DR5-B–DR5 - trimer of DR5-B in complex with receptor DR5 (derived from PDB ID 1D0G)
 [Back](https://intbio.github.io/2024_TRAIL_MD)
 
 <html lang="en">
@@ -48,8 +48,8 @@
 <script src="https://unpkg.com/ngl@2.0.0-dev.35/dist/ngl.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script>
-  var pdb="trj/trimer_peptides_DR5.pdb"
-  var xtc="trj/trimer_peptides_DR5.xtc"
+  var pdb="trj/trimer_DR5.pdb"
+  var xtc="trj/trimer_DR5.xtc"
   var trjstep = 2;
   $(document).ready(function() {
     window.stage = new NGL.Stage("viewport0", {
