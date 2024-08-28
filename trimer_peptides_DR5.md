@@ -50,7 +50,7 @@
 <script>
   var pdb="trj/trimer_peptides_DR5.pdb"
   var xtc="trj/trimer_peptides_DR5.xtc"
-  var trjstep = 0.02;
+  var trjstep = 2;
   $(document).ready(function() {
     window.stage = new NGL.Stage("viewport0", {
       backgroundColor: "#FFFFFF"
@@ -216,8 +216,6 @@
 
     $('input[type=checkbox][name=ref_str_check]').on('change', toggle_reference_structure);
     $('input[type=checkbox][name=arg_lys_check]').on('change', toggle_lys_arg_visibility);
-    $('input[type=checkbox][name=latch_check]').on('change', toggle_latch_visibility);
-    $('input[type=checkbox][name=highlight_DA_check]').on('change', toggle_DA_highlight);
     $('input[type=checkbox][name=ortho_check]').on('change', toggle_orthographic);
     $('input[type=checkbox][name=axes_check]').on('change', toggle_axes_visibility);
     
@@ -501,29 +499,16 @@
       Show ARG LYS
     </label>
     
-    <input class="form-check-input " type="checkbox" name="latch_check" value="" id="latch_check">
-    <label class="form-check-label " for="latch_check">
-      Show H3 39-49 DNA latch
-    </label>
-        
-
-    <input class="form-check-input " type="checkbox" name="highlight_DA_check" value="" id="highlight_DA_check">
-    <label class="form-check-label " for="highlight_DA_check">
-      Highlight ADE
-    </label>
-
 
     <div id="viewport0" style="height:500px; border: thin solid black"></div>
     <div class="slidecontainer">
       <button type="submit" class="btn" name="play_button" data-toggle="button" id='play' onclick='window.traj.player.play();'>Play</button>
       <button type="submit" class="btn" name="play_button" data-toggle="button" id='pause' onclick='window.traj.player.pause();'>Pause</button>
       <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
-      <p>Time: <span id="frame_counter"></span> μs</p>
+      <p>Time: <span id="frame_counter"></span> ns</p>
 
     </div>
-    <h4>Number of detached DNA base pairs from each nucleosome end</h4>
-    <div id='tooltip' style='position:absolute;background-color:lightgray;padding:5px'></div>
-    <div id="my_dataviz"></div>
+
 
 
   </body>
