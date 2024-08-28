@@ -2,7 +2,7 @@
 ## "MD simulations of bivalent DR5-B fusion"
 
 ### GitHub repository
-[https://github.com/intbio/Armeev_et_al_2021](https://github.com/intbio/2024_TRAIL_MD)
+[https://github.com/intbio/2024_TRAIL_MD](https://github.com/intbio/2024_TRAIL_MD)
 
 ### Interactive preview of MD trajectories
 - [SRH–DR5-B–iRGD–DR5 - trimer of bivalent fusion SRH–DR5-B–iRGD in complex with receptor DR5 (derived from PDB ID 1D0G)](trimer_peptides_DR5)
