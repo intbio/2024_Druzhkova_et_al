@@ -23,7 +23,7 @@
   <script>
   
 
-   var names = ['SRH_VEGFR_1.pdb', 'SRH_VEGFR_2.pdb', 'SRH_VEGFR_3.pdb', 'SRH_VEGFR_4.pdb', 'SRH_VEGFR_5.pdb', 'SRH_VEGFR_6.pdb', 'SRH_VEGFR_7.pdb', 'SRH_VEGFR_8.pdb', 'SRH_VEGFR_9.pdb', '2020_FGYGIQYGA.pdb']
+   var names = ['docking_str/SRH_VEGFR2_1.pdb', 'docking_str/SRH_VEGFR2_2.pdb', 'docking_str/SRH_VEGFR2_3.pdb', 'docking_str/SRH_VEGFR2_4.pdb', 'docking_strS/RH_VEGFR2_5.pdb', 'docking_str/SRH_VEGFR2_6.pdb', 'docking_str/SRH_VEGFR2_7.pdb', 'docking_str/SRH_VEGFR2_8.pdb', 'docking_str/SRH_VEGFR2_9.pdb', 'docking_str/SRH_VEGFR2_10.pdb']
    var models = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    var galaxy_scores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    var energies = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
