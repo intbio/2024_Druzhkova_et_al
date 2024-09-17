@@ -29,7 +29,7 @@
    peptide_reps = [];
     $(document).ready(function() {
       window.stage = new NGL.Stage("viewport",{ backgroundColor:"#FFFFFF" });
-      window.stage.loadFile("docking_str/iRGD_aVb3_1.pdb").then(function (ref_pdb) {
+      window.stage.loadFile("docking_str/iRGD_aVb3_ref.pdb").then(function (ref_pdb) {
         var aspectRatio = 2;
         var radius = 1.5;
 
