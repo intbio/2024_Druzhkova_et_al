@@ -34,7 +34,7 @@
         var radius = 1.5;
 
         ref_pdb.addRepresentation('cartoon', {
-           "sele": ":A ", "color": 0xd6d6d6,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
+           "sele": ":A :B", "color": 0xd6d6d6,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
         ref_pdb.autoView();
       });
 
@@ -51,7 +51,7 @@
 		for (k = 0; k < arrayLength; k++) {
             window.stage.loadFile(`${names[k]}`).then(function (ref_pdb) {
                 var repr = ref_pdb.addRepresentation('hyperball', {
-                   "sele": ":B", "color": hyper_scheme});
+                   "sele": ":C", "color": hyper_scheme});
                 repr.setVisibility(false);
                 peptide_reps.push(repr);
                
