@@ -64,8 +64,9 @@
     var arrayLength = names.length;
 			for (var i = 0; i < arrayLength; i++) {
         
-        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> ${names[i]} </td></tr>`); 
+        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://github.com/intbio/2024_TRAIL_MD/tree/main/docking_str/${names[i]}" download> </td></tr>`); 
 			}
+		  
       
 $('input[type=checkbox]').on('change', toggle_reference_structure);
 
