@@ -30,7 +30,7 @@
    peptide_reps = [];
     $(document).ready(function() {
       window.stage = new NGL.Stage("viewport",{ backgroundColor:"#FFFFFF" });
-      window.stage.loadFile("VEGFR2.pdb").then(function (ref_pdb) {
+      window.stage.loadFile("docking_str/SRH_VEGFR2_1.pdb").then(function (ref_pdb) {
         var aspectRatio = 2;
         var radius = 1.5;
 
