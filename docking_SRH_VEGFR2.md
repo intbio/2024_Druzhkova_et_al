@@ -13,7 +13,7 @@
  
 <table border="solid 1px;" style="font-size:14px;">
 <tr>
-<th> Show </th><th> GalazyDock score </th><th>Energy, kkal/mol </th>
+<th> Show </th><th> GalazyDock score </th><th>Energy, kkal/mol </th><th>Download PDB </th>
 </tr>
 
 <tbody>
@@ -64,7 +64,7 @@
     var arrayLength = names.length;
 			for (var i = 0; i < arrayLength; i++) {
         
-        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${galaxy_score[i]} </td><td> ${energies[i]} </td></tr>`); 
+        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> ${names[i]} </td></tr>`); 
 			}
       
 $('input[type=checkbox]').on('change', toggle_reference_structure);
