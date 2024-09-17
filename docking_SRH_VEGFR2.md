@@ -47,7 +47,7 @@
         ['0xecf0f1', '_H'],
         ["blue", "_N"],
         ["red", "_O"],
-        ["magenta", "*"]
+        ["cyan", "*"]
       ], "DA");
 		for (k = 0; k < arrayLength; k++) {
             window.stage.loadFile(`${names[k]}`).then(function (ref_pdb) {
