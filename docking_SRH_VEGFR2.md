@@ -52,7 +52,7 @@
 		for (k = 0; k < arrayLength; k++) {
             window.stage.loadFile(`${names[k]}`).then(function (ref_pdb) {
                 var repr = ref_pdb.addRepresentation('hyperball', {
-                   "sele": "all", "color": hyper_scheme});
+                   "sele": ":B", "color": hyper_scheme});
                 repr.setVisibility(false);
                 peptide_reps.push(repr);
                
