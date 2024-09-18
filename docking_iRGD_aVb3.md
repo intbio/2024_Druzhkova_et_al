@@ -52,7 +52,7 @@
         ["red", "_O"],
         ["cyan", "*"]
       ], "DA");
-		for (k = 0; k <= arrayLength; k++) {
+		for (k = 0; k < arrayLength; k++) {
             window.stage.loadFile(`${names[k]}`).then(function (ref_pdb) {
                 var repr = ref_pdb.addRepresentation('hyperball', {
                    "sele": ":C", "color": hyper_scheme});
@@ -64,8 +64,8 @@
     
     window.stage.viewerControls.spin( [ 0, 1, 0 ],110 )
     });
-    var arrayLength = names.length;
-			for (var i = 0; i < arrayLength; i++) {
+    var i
+    for (i= 0; i < arrayLength; i++) {
         
         document.write(`<tr><td> <input type="checkbox" id="${i}" name="${names[i]}"></td> <td>  ${models[i]}  </td> <td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
 			}
