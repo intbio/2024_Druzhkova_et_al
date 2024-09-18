@@ -52,7 +52,7 @@
         ["red", "_O"],
         ["cyan", "*"]
       ], "DA");
-		for (k = 0; k < arrayLength; k++) {
+		for (k = 0; k =< arrayLength; k++) {
             window.stage.loadFile(`${names[k]}`).then(function (ref_pdb) {
                 var repr = ref_pdb.addRepresentation('hyperball', {
                    "sele": ":C", "color": hyper_scheme});
