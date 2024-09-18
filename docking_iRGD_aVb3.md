@@ -8,7 +8,8 @@
 </head>
 <body>
 <br>
-  <p style="color:#d6d6d6;font-size:22px;font-family:verdana;font-weight: bold;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;display: inline">Integrin aV/b3,  extracellular segment (PDB ID 1L5G)</p>
+  <p style="color:#d6d6d6;font-size:22px;font-family:verdana;font-weight: bold;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;display: inline">Integrin aV (PDB ID 1L5G, chain A)</p>
+  <p style="color:#FFF2CC;font-size:22px;font-family:verdana;font-weight: bold;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;display: inline">Integrin b3 (PDB ID 1L5G, chain B)</p>
 
 <table border="solid 1px;" style="font-size:14px;">
 <tr>
@@ -34,7 +35,11 @@
         var radius = 1.5;
 
         ref_pdb.addRepresentation('cartoon', {
-           "sele": ":A :B", "color": 0xd6d6d6,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
+           "sele": ":A", "color": 0xd6d6d6,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
+        ref_pdb.autoView();
+      });
+	ref_pdb.addRepresentation('cartoon', {
+           "sele": ":B", "color": #FFF2CC,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
         ref_pdb.autoView();
       });
 
