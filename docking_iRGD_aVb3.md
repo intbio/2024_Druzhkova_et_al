@@ -40,7 +40,7 @@
         ref_pdb.autoView();
       });
 	ref_pdb.addRepresentation('cartoon', {
-           "sele": ":B", "color": 0xfff2cc,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
+           "sele": ":B", "color": 'yellow',"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
         ref_pdb.autoView();
       });
 
