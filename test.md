@@ -32,7 +32,7 @@
    peptide_reps = [];
     $(document).ready(function() {
       window.stage = new NGL.Stage("viewport",{ backgroundColor:"#FFFFFF" });
-      window.stage.loadFile("docking_str/SRH_VEGFR2_10.pdb").then(function (nucl) {
+      window.stage.loadFile("docking_str/SRH_VEGFR2_1.pdb").then(function (nucl) {
         var aspectRatio = 2;
         var radius = 1.5;
 
@@ -46,11 +46,7 @@
            "sele": "nucleic", "color": 0xd6d6d6,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });
         nucl.addRepresentation('base', {
            "sele": "nucleic", "color": 0xd6d6d6});
-var repr = nucl.addRepresentation('hyperball', {
-                   "sele": ":X", "color": 0xfc03ec});
-                repr.setVisibility(false);
-     
-        nucl.autoView();
+     nucl.autoView();
       });
 
       var arrayLength = names.length;
