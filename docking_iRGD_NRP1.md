@@ -22,7 +22,7 @@
   <script>
   
 
-   var names = ['docking_str/iRGD_NRP1_1.pdb', 'docking_str/iRGD_NRP1_2.pdb', 'docking_str/iRGD_NRP1_3.pdb', 'docking_str/iRGD_NRP1_4.pdb', 'docking_strS/iRGD_NRP1_5.pdb', 'docking_str/iRGD_NRP1_6.pdb', 'docking_str/iRGD_NRP1_7.pdb', 'docking_str/iRGD_NRP1_8.pdb', 'docking_str/iRGD_NRP1_9.pdb', 'docking_str/iRGD_NRP1_10.pdb']
+   var names = ['docking_str/iRGD_NRP1_1.pdb', 'docking_str/iRGD_NRP1_2.pdb', 'docking_str/iRGD_NRP1_3.pdb', 'docking_str/iRGD_NRP1_4.pdb', 'docking_str/iRGD_NRP1_5.pdb', 'docking_str/iRGD_NRP1_6.pdb', 'docking_str/iRGD_NRP1_7.pdb', 'docking_str/iRGD_NRP1_8.pdb', 'docking_str/iRGD_NRP1_9.pdb', 'docking_str/iRGD_NRP1_10.pdb']
    var models = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    var galaxy_scores = [0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612]
    var energies = [-3.044,-3.461,-0.735,-4.107,-2.758,-4.899,-3.311,-0.054,-2.199,-6.453]
