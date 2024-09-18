@@ -12,7 +12,7 @@
  
 <table border="solid 1px;" style="font-size:14px;">
 <tr>
-<th> Show </th><th> GalazyDock score </th><th>Energy, kkal/mol </th><th>Download PDB </th>
+<th> Show </th><th> Model </th><th> GalazyDock score </th><th>Energy, kkal/mol </th><th>Download PDB </th>
 </tr>
 
 <tbody>
@@ -24,8 +24,8 @@
 
    var names = ['docking_str/iRGD_NRP1_1.pdb', 'docking_str/iRGD_NRP1_2.pdb', 'docking_str/iRGD_NRP1_3.pdb', 'docking_str/iRGD_NRP1_4.pdb', 'docking_strS/iRGD_NRP1_5.pdb', 'docking_str/iRGD_NRP1_6.pdb', 'docking_str/iRGD_NRP1_7.pdb', 'docking_str/iRGD_NRP1_8.pdb', 'docking_str/iRGD_NRP1_9.pdb', 'docking_str/iRGD_NRP1_10.pdb']
    var models = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-   var galaxy_scores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-   var energies = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+   var galaxy_scores = [0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612]
+   var energies = [-3.044,-3.461,-0.735,-4.107,-2.758,-4.899,-3.311,-0.054,-2.199,-6.453]
    peptide_reps = [];
     $(document).ready(function() {
       window.stage = new NGL.Stage("viewport",{ backgroundColor:"#FFFFFF" });
@@ -63,7 +63,7 @@
     var arrayLength = names.length;
 			for (var i = 0; i < arrayLength; i++) {
         
-        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
+        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${models[i]} </td></td><td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
 			}
 		  
       
