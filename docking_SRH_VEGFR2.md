@@ -13,7 +13,7 @@
  
 <table border="solid 1px;" style="font-size:14px;">
 <tr>
-<th> Show </th><th> GalazyDock score </th><th>Energy, kkal/mol </th><th>Download PDB </th>
+<th> Show </th><th> Model </th><th> GalazyDock score </th><th>Energy, kkal/mol </th><th>Download PDB </th>
 </tr>
 
 <tbody>
@@ -64,7 +64,7 @@
     var arrayLength = names.length;
 			for (var i = 0; i < arrayLength; i++) {
         
-        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
+        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${models[i]} </td><td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
 			}
 		  
       
