@@ -73,7 +73,7 @@ $('input[type=checkbox]').on('change', toggle_reference_structure);
 
 function toggle_reference_structure() {
                var state = $(this).is(":checked");
-               var name = $(this).attr('id');
+               var name = $(this).attr('id') - 1;
                peptide_reps[name].setVisibility(state)
           }
 
