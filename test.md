@@ -66,14 +66,14 @@
     var arrayLength = names.length;
     for (var i = 0; i < arrayLength; i++) {
         
-        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${sequences[i]}">  </td> <td> ${sequences[i]} </td> <td> ${energies[i]} </td></tr>`); 
+        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${sequences[i]}">  </td> <td> ${i} </td> <td> ${energies[i]} </td></tr>`); 
 			}
       
 $('input[type=checkbox]').on('change', toggle_reference_structure);
 
 function toggle_reference_structure() {
                var state = $(this).is(":checked");
-               var name = $(this).attr('id') - 1;
+               var name = $(this).attr('id') ;
                peptide_reps[name].setVisibility(state)
           }
 
