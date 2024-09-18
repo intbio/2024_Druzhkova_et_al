@@ -61,11 +61,11 @@
                
           	});
 		}
-    
+
     window.stage.viewerControls.spin( [ 0, 1, 0 ],110 )
     });
-    var i
-    for (i= 0; i < arrayLength; i++) {
+    var arrayLength = names.length;
+			for (var i = 0; i < arrayLength; i++) {
         
         document.write(`<tr><td> <input type="checkbox" id="${i}" name="${names[i]}"></td> <td>  ${models[i]}  </td> <td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
 			}
