@@ -49,8 +49,7 @@
 var repr = nucl.addRepresentation('hyperball', {
                    "sele": ":X", "color": 0xfc03ec});
                 repr.setVisibility(false);
-                peptide_reps.push(repr);
-
+     
         nucl.autoView();
       });
 
