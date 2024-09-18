@@ -26,8 +26,8 @@
 
    var names = ['docking_str/iRGD_aVb3_1.pdb', 'docking_str/iRGD_aVb3_2.pdb', 'docking_str/iRGD_aVb3_3.pdb', 'docking_str/iRGD_aVb3_4.pdb', 'docking_strS/iRGD_aVb3_5.pdb', 'docking_str/iRGD_aVb3_6.pdb', 'docking_str/iRGD_aVb3_7.pdb', 'docking_str/iRGD_aVb3_8.pdb', 'docking_str/iRGD_aVb3_9.pdb', 'docking_str/iRGD_aVb3_10.pdb']
    var models = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-   var galaxy_scores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-   var energies = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+   var galaxy_scores = [0.676,0.676,0.676,0.636,0.636,0.636,0.614,0.614,0.588,0.588]
+   var energies = [0.505,-7.235,-1.036,-4.986,-1.681,-4.165,-3.373,-3.182,7.068,5.611]
    peptide_reps = [];
     $(document).ready(function() {
       window.stage = new NGL.Stage("viewport",{ backgroundColor:"#FFFFFF" });
