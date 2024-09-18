@@ -50,6 +50,10 @@
 
         nucl.autoView();
       });
+      var repr = nucl.addRepresentation('hyperball', {
+                   "sele": ":X", "color": 0xfc03ec});
+                repr.setVisibility(false);
+                peptide_reps.push(repr);
 
       var arrayLength = names.length;
       var k;
@@ -66,7 +70,7 @@
     window.stage.viewerControls.spin( [ 0, 1, 0 ],110 )
     });
     var arrayLength = names.length;
-			for (var i = 0; i < arrayLength; i++) {
+    for (var i = 0; i < arrayLength; i++) {
         
         document.write(`<tr><td> <input type="checkbox" id="${i}" name="${sequences[i]}">  </td> <td> ${sequences[i]} </td> <td> ${energies[i]} </td></tr>`); 
 			}
@@ -76,7 +80,7 @@ $('input[type=checkbox]').on('change', toggle_reference_structure);
 function toggle_reference_structure() {
                var state = $(this).is(":checked");
                var name = $(this).attr('id');
-               peptide_reps[name+1].setVisibility(state)
+               peptide_reps[name].setVisibility(state)
           }
 
 
