@@ -26,7 +26,8 @@
   <script>
   
 
-   var names = ['docking_str/SRH_VEGFR2_1.pdb', 'docking_str/SRH_VEGFR2_2.pdb', 'docking_str/SRH_VEGFR2_3.pdb', 'docking_str/SRH_VEGFR2_4.pdb', 'docking_strS/RH_VEGFR2_5.pdb', 'docking_str/SRH_VEGFR2_6.pdb', 'docking_str/SRH_VEGFR2_7.pdb', 'docking_str/SRH_VEGFR2_8.pdb', 'docking_str/SRH_VEGFR2_9.pdb', 'docking_str/SRH_VEGFR2_10.pdb']   var sequences = ['GMWIMGRIP', 'VVWIMGRIP', 'KVWIMGRIP', 'FGYGIQYFM', 'INWIMGRIP', 'CLLVLSRGF', 'GMWVNSFGW', 'FGYGIQYRA', 'VVWVNSFGW', 'FGYGIQYGA']
+   var names = ['docking_str/SRH_VEGFR2_1.pdb', 'docking_str/SRH_VEGFR2_2.pdb', 'docking_str/SRH_VEGFR2_3.pdb', 'docking_str/SRH_VEGFR2_4.pdb', 'docking_strS/RH_VEGFR2_5.pdb', 'docking_str/SRH_VEGFR2_6.pdb', 'docking_str/SRH_VEGFR2_7.pdb', 'docking_str/SRH_VEGFR2_8.pdb', 'docking_str/SRH_VEGFR2_9.pdb', 'docking_str/SRH_VEGFR2_10.pdb']   
+   var sequences = ['GMWIMGRIP', 'VVWIMGRIP', 'KVWIMGRIP', 'FGYGIQYFM', 'INWIMGRIP', 'CLLVLSRGF', 'GMWVNSFGW', 'FGYGIQYRA', 'VVWVNSFGW', 'FGYGIQYGA']
    var energies = [-6.88, -6.24, -5.44, -4.99, -4.3, -3.72, -2.57, -2.53, -2.11, -1.46]
    peptide_reps = [];
     $(document).ready(function() {
