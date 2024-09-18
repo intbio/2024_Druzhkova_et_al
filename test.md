@@ -46,14 +46,13 @@
            "sele": "nucleic", "color": 0xd6d6d6,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });
         nucl.addRepresentation('base', {
            "sele": "nucleic", "color": 0xd6d6d6});
-        
-
-        nucl.autoView();
-      });
-      var repr = nucl.addRepresentation('hyperball', {
+var repr = nucl.addRepresentation('hyperball', {
                    "sele": ":X", "color": 0xfc03ec});
                 repr.setVisibility(false);
                 peptide_reps.push(repr);
+
+        nucl.autoView();
+      });
 
       var arrayLength = names.length;
       var k;
