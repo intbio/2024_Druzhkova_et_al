@@ -37,8 +37,6 @@
 
         ref_pdb.addRepresentation('cartoon', {
            "sele": ":A", "color": 0xd6d6d6,"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
-        ref_pdb.autoView();
-      });
 	ref_pdb.addRepresentation('cartoon', {
            "sele": ":B", "color": 'yellow',"aspectRatio":aspectRatio, "radius":radius,"radiusSegments":1,"capped":0 });;
         ref_pdb.autoView();
