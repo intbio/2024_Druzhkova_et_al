@@ -1,6 +1,6 @@
 
 ## Visualisation of docking solutions for the iRGD-NRP1 complex 
-[Back](https://intbio.org/2024_TRAIL_MD/)
+[Back](https://intbio.org/2024_Druzhkova_et_al/)
 
 <html lang="en">
 <head>
