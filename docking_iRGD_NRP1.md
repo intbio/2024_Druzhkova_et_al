@@ -12,7 +12,7 @@
  
 <table border="solid 1px;" style="font-size:14px;">
 <tr>
-<th> Show </th><th> Model </th><th> GalazyDock score </th><th>Energy, kkal/mol </th><th>Download PDB </th>
+<th> Show </th> <th>Model </th> <th> GalazyDock score </th><th>Energy, kcal/mol (FoldX) </th><th>Energy, kcal/mol (MMPBSA) </th><th>Download PDB </th>
 </tr>
 
 <tbody>
@@ -26,6 +26,7 @@
    var models = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    var galaxy_scores = [0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612,0.612]
    var energies = [-3.044,-3.461,-0.735,-4.107,-2.758,-4.899,-3.311,-0.054,-2.199,-6.453]
+   var mmpbsa = ['-26.16 ± 1.01','-20.97 ± 1.25','NA','-20.02 ± 0.93','-35.54 ± 0.12','-24.27 ± 0.25','-38.66 ± 0.48','NA','NA','-24.22 ± 1.73']
    peptide_reps = [];
     $(document).ready(function() {
       window.stage = new NGL.Stage("viewport",{ backgroundColor:"#FFFFFF" });
@@ -63,7 +64,7 @@
     var arrayLength = names.length;
 			for (var i = 0; i < arrayLength; i++) {
         
-        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${models[i]}"></td><td> ${models[i]} </td></td><td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
+        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${names[i]}"></td> <td>  ${models[i]}  </td> <td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td></td><td> ${mmpbsa[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
 			}
 		  
       
