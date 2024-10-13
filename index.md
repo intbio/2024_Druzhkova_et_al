@@ -2,7 +2,7 @@
 ## "MD simulations of bivalent DR5-B fusion"
 
 ### GitHub repository
-[https://github.com/intbio/2024_TRAIL_MD](https://github.com/intbio/2024_TRAIL_MD)
+[https://github.com/intbio/2024_Druzhkova_et_al](https://github.com/intbio/2024_TRAIL_MD)
 
 ## MD simulations
 ### Interactive preview of MD trajectories
