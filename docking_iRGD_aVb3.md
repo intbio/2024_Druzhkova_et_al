@@ -1,4 +1,5 @@
 
+
 ## Visualisation of docking solutions for the iRGD-integrin aV/b3 complex 
 [Back](https://intbio.org/2024_TRAIL_MD/)
 
@@ -14,7 +15,7 @@
 
 <table border="solid 1px;" style="font-size:14px;">
 <tr>
-<th> Show </th> <th>Model </th> <th> GalazyDock score </th><th>Energy, kkal/mol </th><th>Download PDB </th>
+<th> Show </th> <th>Model </th> <th> GalazyDock score </th><th>Energy, kcal/mol (FoldX) </th><th>Energy, kcal/mol (MMPBSA) </th><th>Download PDB </th>
 </tr>
 
 <tbody>
@@ -28,6 +29,7 @@
    var models = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    var galaxy_scores = [0.676,0.676,0.676,0.636,0.636,0.636,0.614,0.614,0.588,0.588]
    var energies = [0.505,-7.235,-1.036,-4.986,-1.681,-4.165,-3.373,-3.182,7.068,5.611]
+   var mmpbsa = ['NA',-12.3 ± 0.98,-10.1 ± 1.41,-12.78 ± 1.86,-5.5 ± 1.32,-34.7 ± 1.65,-12.07 ± 1.09,-32.47 ± 1.07,'NA','NA']
    peptide_reps = [];
     $(document).ready(function() {
       window.stage = new NGL.Stage("viewport",{ backgroundColor:"#FFFFFF" });
@@ -67,7 +69,7 @@
     var arrayLength = names.length;
 			for (var i = 0; i < arrayLength; i++) {
         
-        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${names[i]}"></td> <td>  ${models[i]}  </td> <td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
+        document.write(`<tr><td> <input type="checkbox" id="${i}" name="${names[i]}"></td> <td>  ${models[i]}  </td> <td> ${galaxy_scores[i]} </td><td> ${energies[i]} </td></td><td> ${mmpbsa[i]} </td><td> <a href="https://intbio.org/2024_TRAIL_MD/${names[i]}" download>PDB</a> </td></tr>`); 
 			}
 		  
       
