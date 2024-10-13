@@ -1,5 +1,5 @@
 # Supplementary data
-## "MD simulations of bivalent DR5-B fusion"
+## "An integrated approach to assessing the antiangiogenic and antitumor activity of a multivalent fusion protein targeting VEGFR2, NRP-1 and DR5 receptors" by Druzhkova et al.
 
 ### GitHub repository
 [https://github.com/intbio/2024_Druzhkova_et_al](https://github.com/intbio/2024_TRAIL_MD)
