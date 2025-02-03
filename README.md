@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/848766163.svg)](https://doi.org/10.5281/zenodo.14795724)
 This repository contains supplementary data for 
 "NNN"
 
